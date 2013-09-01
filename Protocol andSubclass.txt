@@ -1,0 +1,31 @@
+PROTOCOL v/s SUBCLASS
+
+PROTOCOL							                				
+
+ 1. Declare the methods expected to be used for a particular situation.	   	   																   								
+ 2. Syntax:												   						
+		@protocol ProtocolName							
+		// list of methods and properties			
+		@end													   							
+
+ 3. Protocols can have optional methods					
+	  i.e: all methods need not be used in class implementation.												   		
+
+ 4. Protocols are also useful in situations where the class of an object isn’t known, or needs to stay hidden.(Anonymity)		
+
+ 5.Protocols are just the rules or properties to be used in the inherited classes to relate two different type of objects. 
+Hence no concept of over riding. A class must implement all methods in a protocol it declares itself as adopting.
+
+SUBCLASS
+
+1. A subclass inherits methods and instance variables from its superclass.
+2. Syntax:
+	@interface subclassname : classname {	
+	   // instance variables				
+	}			   							
+	//methods		   						
+	@end		
+3. All the declared methods need not be used in subclass.
+4. Class of an object cannot be hidden.	
+5.A subclass can override a method it inherits from the class it is based on. The class it is based on is called its superclass. 
+Hence inheriting the variables and methods through which super class can be modified.  
