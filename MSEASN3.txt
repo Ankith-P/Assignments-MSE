@@ -1,0 +1,74 @@
+Q1> Explore the DVM instructions and prepare a summary of the same atleast for 5 instructions in a detailed format
+
+
+i) instruction name: move
+ii) syntax         :move x,y //Moves the content of y into x. 
+					Both registers must be in the first 256 register range.
+iii)example        :0110 - move v0, v1
+						Moves v1 into v0.
+						
+i) instruction name:return
+ii)syntax		   :return x
+iii)example        :0F00 - return v0
+					Returns with return value in v0.
+
+i)instruction name :aget
+ii)syntax		   :aget vx,vy,vz
+iii)example        :4407 0306 - aget v7, v3, v6
+					Gets an integer array element. The array is referenced
+					by v3 and the element is indexed by v6.
+					The element will be put into v7.
+
+i)instruction name :neg-int
+ii)syntax		   :neg-int vx,vy
+iii)example        :7B01 - neg-int v1,v0
+					Calculates -v0 and stores the result in v1
+
+i)instruction name :iget
+ii)syntax		   :iget-quick vx,vy,offset
+iii)example        :F221 1000 - iget-quick v1, v2, [obj+0010]
+					Gets the value at offset 0CH of the instance pointed 
+					by v2 and stores the object reference in v1.
+
+					
+
+Q2> Differentiate between mobile and cloud computing
+cloud computing
+-allows you to store your files and folders in a “cloud” area on	the Internet,
+ allowing you access to all of your files and folders wherever you are in the world
+-Cloud computing provides the convenience for users to help them access resources 
+ easily and quickly  
+-basically virtual servers available over the Internet
+-a way to increase capacity or add capabilities on the fly without investing in 
+ new infrastructure, training new personnel, or licensing new software.
+-Cloud computing encompasses any subscription-based or pay-per-use service that,
+ in real time over the Internet, extends IT's existing capability.
+
+ Mobile computing
+-This could be a laptop or a mobile phone or some device which enables 
+you to telework – working wherever you go because of the small size of
+ the device you’re using. 
+-With mobile computing we can check our email messages, our bills, our 
+ bank accounts, and our other private information just by using a 
+ mobile phone or laptop anywhere
+-Physical service available on physical device
+-Capability is limited compared to cloud computing.
+-encompasses subscription-based or pay-per-use service
+
+
+ Q3> Give an example of an application simulating an environment of context aware computing and justify.
+	Example: Antalya Official City & Travel Guide
+		Starting from scratch Antalya Official City & Travel Guide re-thought the whole concept of 
+	why and how we all travel, of what we need when we get there and most importantly, what we don't.
+	The result – ultra-smart travel companion stacked with priceless information for the discerning, 
+	value-conscious and busy traveller.
+	Justification:
+		Antalya Official City & Travel Guide is a context aware application that is developed as an 
+		interdisciplinary context aware case study. It is based on a real demand of Antalya as well 
+		as Turkey to enhance the visitor experience. Antalya Official City & Travel Guide presents 
+		information about points of interest, events, offers, to do's and much more in the vicinity 
+		of the person carrying the device.
+	With Antalya Official City & Travel Guide, by the time you get to your destination, all you need do is relax, because if it’s not in Antalya Official City & Travel Guide, you’re not missing anything. Hyper-opinionated, irreverent, bright and fun to use, whether you have a few hours or a few days, Antalya Official City & Travel Guide really is all you need. Just for your information, you’ll never hear us refer to our users as tourists.
+	With Antalya Official City & Travel Guide you’re a visitor. It’s a big difference.
+
+
